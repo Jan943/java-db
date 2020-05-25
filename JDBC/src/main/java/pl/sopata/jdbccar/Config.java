@@ -28,12 +28,4 @@ public class Config {
 
         return new JdbcTemplate(getDataSource());
     }
-
-    @EventListener(ApplicationReadyEvent.class)
-    public void init(){
-
-        String sql = "CREATE TABLE Car(car_id int, mark varchar(255), model varchar(255), color varchar(255));";
-        getJdbcTemplate().update(sql);
-
-    }
 }
