@@ -25,7 +25,6 @@ public class Config {
 
     @Bean
     public JdbcTemplate getJdbcTemplate(){
-
         return new JdbcTemplate(getDataSource());
     }
 }
