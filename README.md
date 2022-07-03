@@ -1,5 +1,4 @@
-## Databases with Java
-Database projects based on Java:
+## Java apps using different databases and its approach:
 
 ### JDBC
 SpringBoot application which uses JDBC to save and read data about the car.
