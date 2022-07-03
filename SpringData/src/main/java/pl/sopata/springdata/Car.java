@@ -3,6 +3,7 @@ package pl.sopata.springdata;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "MyCar")
 public class Car {
 
     @Id
@@ -10,6 +11,7 @@ public class Car {
     private Long id;
 
     private String mark;
+    @Transient
     private String model;
     @Enumerated(EnumType.STRING)
     private Color color;

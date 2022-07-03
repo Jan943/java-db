@@ -26,6 +26,9 @@ public class Start {
 
         carRepo.deleteById(1L);
 
+        Iterable<Car> allByColor = carRepo.findAllByColor(Color.RED);
+        allByColor.forEach(System.out::println);
+
         Iterable<Car> all = carRepo.findAll();
         all.forEach(System.out::println);
     }

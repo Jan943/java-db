@@ -7,4 +7,6 @@ import java.util.List;
 
 @Repository
 public interface CarRepo extends CrudRepository<Car, Long> {
+
+    List<Car> findAllByColor(Color color);
 }
